@@ -1,5 +1,6 @@
 import { useState } from "react"
 import '../PersonalInfo.css'
+import { useNavigate } from "react-router"
 
 export function PersonalInfo() {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ export function PersonalInfo() {
     specialisation: "",
     cgpa: "",
   })
+  const navigate = useNavigate()
 
   const handleInputChange = (event) => {
     const { name, value } = event.target
@@ -20,8 +22,7 @@ export function PersonalInfo() {
   }
 
   const handleSubmit = (event) => {
-    event.preventDefault()
-    console.log("Form submitted:", formData)
+    navigate("/role")
   }
 
   return (
@@ -72,7 +73,7 @@ export function PersonalInfo() {
           value={formData.cgpa}
           onChange={handleInputChange}
         />
-        <button type="submit">Submit Profile</button>
+        <button type="submit" onClick={handleSubmit}>Submit Profile</button>
       </form>
     </div>
   )
