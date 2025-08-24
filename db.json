@@ -1,0 +1,28 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Alice Tan",
+      "email": "alice@example.com",
+      "aboutYou": "Frontend developer who loves building with React.",
+      "specialisation": "Frontend Development",
+      "cgpa": "3.8"
+    },
+    {
+      "id": 2,
+      "name": "Bob Lee",
+      "email": "bob@example.com",
+      "aboutYou": "Backend engineer passionate about scalable systems.",
+      "specialisation": "Backend Development",
+      "cgpa": "3.6"
+    },
+    {
+      "id": 3,
+      "name": "Charlie Lim",
+      "email": "charlie@example.com",
+      "aboutYou": "AI/ML enthusiast, loves Python and TensorFlow.",
+      "specialisation": "Machine Learning",
+      "cgpa": "3.9"
+    }
+  ]
+}

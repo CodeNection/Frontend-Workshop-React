@@ -1,0 +1,36 @@
+.role-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.roleBtn {
+  width: 360px;
+  height: 360px;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.roleBtn:hover {
+  background-color: #ddd;
+}
+
+.roleBtn.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.selected-text {
+  margin-top: 1rem;
+  font-weight: bold;
+}
